@@ -9,7 +9,7 @@ Time spent: **8** hours spent in total
 ## Summary
 
 **Game Of throne API** is an android app that **fill in description (Example: "An app that displays a random character from the Game of Thrones API")**
-
+I also made some changes after my fiest submission did not meet the criteria.
 If I had to describe this project in three (3) emojis, they would be: **🫥🫠🤧**
 
 ## Application Features
@@ -39,7 +39,8 @@ My chosen API for this project is **Game of throne characters**.
 ## Video Demo
 
 Here's a video / GIF that demos all of the app's implemented features:
-![Kapture 2023-04-01 at 00 16 09](https://user-images.githubusercontent.com/111275485/229265210-380a115b-6df2-41c0-89a5-df36690de258.gif)
+
+![Kapture 2023-04-01 at 09 31 02](https://user-images.githubusercontent.com/111275485/229292106-03d6b7b9-c242-4fb4-bbcd-13fc539375d3.gif)
 
 
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Demo' width='' alt='Video Demo' />
