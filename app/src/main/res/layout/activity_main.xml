@@ -20,6 +20,13 @@
         android:textColor="@android:color/black"
         android:paddingTop="16dp"
         android:paddingBottom="16dp"/>
+    <TextView
+        android:id="@+id/character_id_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID: "
+        android:textAppearance="?android:textAppearanceMedium" />
+
 
     <Button
         android:id="@+id/fetch_character_button"

@@ -18,6 +18,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var characterImageView: ImageView
     private lateinit var characterNameTextView: TextView
     private lateinit var fetchCharacterButton: Button
+    private lateinit var characterIdTextView: TextView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +28,8 @@ class MainActivity : AppCompatActivity() {
         characterImageView = findViewById(R.id.character_image_view)
         characterNameTextView = findViewById(R.id.character_name_text_view)
         fetchCharacterButton = findViewById(R.id.fetch_character_button)
+        characterIdTextView = findViewById(R.id.character_id_text_view)
+
 
         fetchCharacterButton.setOnClickListener {
             FetchCharacterTask().execute()
@@ -63,13 +67,16 @@ class MainActivity : AppCompatActivity() {
 
         override fun onPostExecute(result: JSONObject?) {
             if (result != null) {
+                val id = result.getInt("id")
                 val name = result.getString("fullName")
                 val imageUrl = result.getString("imageUrl")
 
                 characterNameTextView.text = name
+                characterIdTextView.text = "ID: $id"
                 Glide.with(this@MainActivity).load(imageUrl).into(characterImageView)
             } else {
                 characterNameTextView.text = "Error fetching character"
             }
         }
+
     }}
