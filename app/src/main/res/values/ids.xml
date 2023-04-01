@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="characterNameTextView" type="id" />
+    <item name="characterImageView" type="id" />
+    <item name="next_character_button" type="id" />
+    <item name="prev_character_button" type="id" />
+</resources>
